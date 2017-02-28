@@ -1,0 +1,54 @@
+a.selected {
+  color:white;
+}
+
+a.selected_edit{
+  color:black;
+
+
+
+}
+.messagepop {
+  background-color:white;
+  border:1px solid #999999;
+  cursor:default;
+  display:none;
+  margin-top: 15px;
+  position:absolute;
+ left:100px;
+  text-align:left;
+  width:394px;
+  z-index:50;
+  padding: 25px 25px 20px;
+}
+.messagepup {
+  background-color:white;
+  border:1px solid #999999;
+  cursor:default;
+  display:none;
+  margin-top: 15px;
+  position:absolute;
+ left:100px;
+  text-align:left;
+  width:394px;
+  z-index:50;
+  padding: 25px 25px 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 3px;
+  padding-left: 15px;
+  text-indent: -15px;
+}
+
+ .messagepop.div {
+  border-bottom: 1px solid #EFEFEF;
+  margin: 8px 15px;
+  padding-bottom: 8px;
+}
+.messagepup.div {
+ border-bottom: 1px solid #EFEFEF;
+ margin: 8px 15px;
+ padding-bottom: 8px;
+}

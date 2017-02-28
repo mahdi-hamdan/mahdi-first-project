@@ -1,0 +1,39 @@
+<?php
+$this->headMeta()->appendHttpEquiv('Content-Type', 'text/html;charset=utf-8');
+$this->headTitle()->setSeparator(' - ');
+$this->headTitle('Zend Framework Tutorial');
+
+echo $this->doctype(); ?>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <?php   echo $this->headMeta(); ?>
+    <?php  $this->headScript()->prependFile( "/js/jquery-3.1.1.js", $type = 'text/javascript' ); ?>
+    <?php  $this->headScript()->appendFile( "/js/bootstrap.js", $type = 'text/javascript' ); ?>
+    <?php  $this->headScript()->appendFile( "/js/bootstrap.min.js", $type = 'text/javascript' ); ?>
+    <?php  $this->headScript()->appendFile( "//cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"); ?>
+    <?php  $this->headScript()->appendFile( "/js/modelpoup.js", $type = 'text/javascript' ); ?>
+
+    <?php  $this->headLink()->appendStylesheet("/css/bootstrap.css"); ?>
+    <?php  $this->headLink()->appendStylesheet("/css/bootstrap.min.css"); ?>
+    <?php  $this->headLink()->appendStylesheet("//cdn.datatables.net/1.10.13/css/jquery.dataTables.min.css"); ?>
+
+    <?php  $this->headLink()->appendStylesheet("/css/site.css"); ?>
+    <?php echo $this->headLink(); ?>
+    <?php echo $this->headTitle(); ?>
+
+</head>
+
+<body>
+<div  class="container-fluid"  id="content">
+<?php echo $this->render('header.phtml'); ?>
+
+    <div  class="jumbotron container-fluid">
+    <?php echo $this->layout()->content; ?>
+        </div>
+
+</div>
+<?php echo $this->render('footer.phtml'); ?>
+<?php echo $this->headScript(); ?>
+
+</body>
+</html>

@@ -1,0 +1,10 @@
+#headr{
+background-color:DarkSalmon ;
+width: 100px;
+
+}
+table,th,td{
+border-style:solid;
+border-collapse: collapse;
+
+}
